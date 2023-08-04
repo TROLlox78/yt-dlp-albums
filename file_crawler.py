@@ -92,10 +92,10 @@ def write_changes(old_dir):
                 for album in new_ls:
                     if album not in old_ls:
                         print(f'{artist}: {album}')
-                        file.write(f'{artist}: {album}')
+                        file.write(f'{artist}: {album}\n')
         else:
             print(f'{artist}: {new_dir[artist]}')
-            file.write(f'{artist}: {new_dir[artist]}')
+            file.write(f'{artist}: {new_dir[artist]}\n')
     file.close()
 
 
